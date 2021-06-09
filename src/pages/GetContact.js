@@ -21,7 +21,7 @@ export default  () => {
     }
     console.log(Object.fromEntries(data));
 
-    let url = 'http://localhost:8080/get-contact';
+    let url = 'https://contacts-app-class.herokuapp.com/get-contact';
     
     let options = {
         method:'POST', 

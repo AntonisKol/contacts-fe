@@ -43,7 +43,7 @@ const Card = ({contact, deleteContact}) => {
             finalForm.append(key, editedContact[key]) 
         })
 
-        const url = 'http://localhost:8080/contacts/update';
+        const url = 'https://contacts-app-class.herokuapp.com/contacts/update';
         const options = {
         method: 'POST',
         headers: {
@@ -68,7 +68,7 @@ const Card = ({contact, deleteContact}) => {
 
     return(
         <div className='card' style={{backgroundColor: bgColor}}>
-            {isEditable?<input data-id="file" type="file" onChange= {editCardHandler}/>:<img src = {"http://localhost:8080/avatars/" + avatar}/>}
+            {isEditable?<input data-id="file" type="file" onChange= {editCardHandler}/>:<img src = {"https://contacts-app-class.herokuapp.com/avatars/" + avatar}/>}
             <div data-id="fullName"
                 onKeyPress={editCheckHandler}
                 onBlur = {editCardHandler}
