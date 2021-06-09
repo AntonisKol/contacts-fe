@@ -1,0 +1,33 @@
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form > * {
+    margin: 10px;
+    height: 20px;
+}
+
+.contact-form > textarea {
+    height: 120px;
+}
+
+.contact-form > button {
+    color: yellow;
+    background-color: grey;
+    width: fit-content;
+    margin: auto;
+    border-radius: 3px;
+}
+
+#get-contact {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
