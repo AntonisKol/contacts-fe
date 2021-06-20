@@ -30,7 +30,7 @@ export default  () => {
     fetch(url, options).then((data) =>
             data.json().then((output) => {
                 if (output.status === "success") {
-                    console.log("Congats");
+                    console.log("Congrats");
                 } else {
                     console.log(output.message);
                 }
